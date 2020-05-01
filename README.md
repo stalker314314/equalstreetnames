@@ -33,6 +33,15 @@ Documentation about those data is available in the same folder (see [`README.md`
 
 See [`docs/README.md`](./docs/README.md)
 
+## Replicate the EqualStreetNames project for your city
+
+| Country | City     | Link                               | Data Repository                                                                           | Maintainer     |
+| ------- | -------- | ---------------------------------- | ----------------------------------------------------------------------------------------- | -------------- |
+| 🇧🇪      | Brussels | https://equalstreetnames.brussels/ | [equalstreetnames-brussels](https://github.com/openknowledgebe/equalstreetnames-brussels) | @jbelien       |
+| 🇷🇸      | Belgrade | - (_wait for green light_)         | [equalstreetnames-belgrade](https://github.com/stalker314314/equalstreetnames-belgrade)   | @stalker314314 |
+
+See [`docs/replicate.md`](./docs/replicate.md)
+
 ## Run locally
 
 1. Clone the repository
@@ -54,10 +63,18 @@ See [`docs/README.md`](./docs/README.md)
 
 1. Add the following line to the `.env` file: `MAPBOX_TOKEN=[your Mapbox token]` replacing `[your Mapbox token]` with the token you created
 
-1. Run
+1. Choose the city you want to run locally :
 
-   ```
-   npm run serve
-   ```
+   1. For Brussels, run
+
+      ```
+      npm run serve:brussels
+      ```
+
+   1. For Belgrade, run
+
+      ```
+      npm run serve:belgrade
+      ```
 
 1. Once installed and running, go to <http://localhost:1234/index.html>
